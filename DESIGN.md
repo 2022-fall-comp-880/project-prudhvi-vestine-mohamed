@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
+=======
+ vestine
+
+>>>>>>> 2065001ca406a872684a11fe74be67847c8f1854
 # DESIGN DOCUMENT
 
 Authors:1.Prudhvi.
@@ -30,4 +35,4 @@ What is the number of cars sold in a state?.
 copy this in DESIGN.md
 [12:04 AM]
 and push in your branch
->>>>>>> 157bbd338f4d643631272ae7716da9e8ad9e877c
+

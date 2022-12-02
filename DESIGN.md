@@ -1,5 +1,4 @@
 # DESIGN DOCUMENT
-
 Authors:1.Prudhvi.
         2.Mohamed,
         3.Vestine
@@ -31,4 +30,11 @@ What is the number of cars sold in a state?.
 * Using an if else statement we check weather the particular car is sold in that state, if that statement is true then the value in `state_d` is incremented. 
 * Input is the `list of states`
 * output is Dictionary with key as `city` and `count of cars sold` as value.
+* Input is the list of states
+* output is Dictionary with key as city and count of cars sold as value.
+[12:04 AM]
+copy this in DESIGN.md
+[12:04 AM]
+and push in your branch
+
 

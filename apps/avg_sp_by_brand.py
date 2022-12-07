@@ -21,8 +21,7 @@ class BrandPrice:
         """
         self.filename = filename
 
-    def file_to_dictionary(self, key_column: int, value_column: int) -> dict[
-        str, list[int]]:
+    def file_to_dictionary(self, key_column: int, value_column: int) -> dict[str, list[int]]:
         """
         Reads from csv file named self. filename using csv.reader() method
         and creates a dictionary with the data in column key_column as keys and

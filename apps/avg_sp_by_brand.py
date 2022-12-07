@@ -24,7 +24,7 @@ class BrandPrice:
     def file_to_dictionary(self, key_column: int, value_column: int) -> dict[
         str, list[int]]:
         """
-        Reads from text file named self. filename using csv.reader() method
+        Reads from csv file named self. filename using csv.reader() method
         and creates a dictionary with the data in column key_column as keys and
         data in column value_column as values
         :param key_column: non-negative integer, position of column in the
@@ -68,7 +68,7 @@ class BrandPrice:
         Creates and returns a new dictionary whose keys are brand names
             and value is average selling price of corresponding brand.
         :returns: dictionary
-           key: str, Brand
+           key: str, Brand name
            value: Float, Average selling price of corresponding brand car.
         """
         brand_dict = self.brand_by_price_d()

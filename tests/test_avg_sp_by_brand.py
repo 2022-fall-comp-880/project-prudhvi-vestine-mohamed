@@ -7,7 +7,7 @@ class TestAverageSellingPrice(unittest.TestCase):
     """Test `average_selling_price_by_brand() method."""
 
     def setUp(self):
-        data_dir = os.path.dirname(file) + "/../data"
+        data_dir = os.path.dirname(__file__) + "/../data"
         self.car_stats = BrandPrice(f'{data_dir}/USA_cars_datasets.csv')
         self.car_stats_empty = BrandPrice(f'{data_dir}/car_dataset_empty.csv')
         self.car_stats_five = BrandPrice(f'{data_dir}/car_dataset_5.csv')
@@ -25,13 +25,11 @@ class TestAverageSellingPrice(unittest.TestCase):
         print(self.car_stats_empty.brand_by_price_d())
         print(actual_res1)
 
-
     def test_five_entries(self):
         """Test case 3 using car_dataset_5.csv."""
         actual_res2 = self.car_stats_five.average_selling_price_by_brand()
         print(self.car_stats_five.brand_by_price_d())
         print(actual_res2)
-
 
     def test_one_entries(self):
         """Test case 3 using car_dataset_1.csv."""

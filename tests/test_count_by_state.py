@@ -15,23 +15,23 @@ class TestSoldCarCountByState(unittest.TestCase):
     def test_multiple_entries(self):
         """Test case 1 using USA_cars_datasets.csv."""
         actual_res = self.car_stats.count_of_sold_cars_by_state()
-        print(self.car_stats.count_by_state_l())
+        print(self.car_stats.count_by_state_l)
         print(actual_res)
 
     def test_empty(self):
         """Test case 2 using car_dataset_empty.csv."""
         actual_res1 = self.car_stats_empty.count_of_sold_cars_by_state()
-        print(self.car_stats_empty.count_by_state_l())
+        print(self.car_stats_empty.count_by_state_l)
         print(actual_res1)
 
     def test_five_entries(self):
         """Test case 3 using car_dataset_5.csv."""
         actual_res2 = self.car_stats_five.count_of_sold_cars_by_state()
-        print(self.car_stats_five.count_by_state_l())
+        print(self.car_stats_five.count_by_state_l)
         print(actual_res2)
 
     def test_one_entries(self):
         """Test case 3 using car_dataset_1.csv."""
         actual_res3 = self.car_stats_one.count_of_sold_cars_by_state()
-        print(self.car_stats_one.count_by_state_l())
+        print(self.car_stats_one.count_by_state_l)
         print(actual_res3)

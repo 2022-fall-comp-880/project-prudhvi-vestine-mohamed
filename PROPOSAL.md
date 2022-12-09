@@ -6,8 +6,7 @@
 
 
 ## Motivation
-This Project is the cars that are placed in an auction. This project helps the buyers and sellers to find the average selling price, Cars sold.
-
+This Project is about the branded cars that are placed in an auction in US. This project helps the buyers and sellers to find the average selling price, Cars sold and briefing about the count of particular colour cars.
 
 ## Investigative Questions
 1. What is the average selling price of a particular car model?
@@ -16,9 +15,7 @@ This Project is the cars that are placed in an auction. This project helps the b
 
 ## Approach
 
-US Cars data was scraped from AUCTION EXPORT.com. This dataset included Information about 28 brands of clean and used vehicles for sale in US. Twelve features were assembled for each car in the dataset
-
-I have taken this data set from the  https://www.kaggle.com/datasets/doaaalsenani/usa-cers-dataset
+Using csv reader we are going to read the data form the csv files. we are going create a python file and corresponding test file for each investigative question. we will be creating methods for reading the file, retrieving the data and transformation of that retrieved data to the desired output. 
 
 # Collaborator of this project is "DOAA ALSENANI (Owner)"
 

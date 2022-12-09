@@ -38,7 +38,7 @@ class CarsSold:
         return car_dict
 
     @property
-    def count_by_state_l(self):
+    def count_by_state_l(self) -> list:
         """
         Creates and returns a list which represents states in USA
         :return: List of strings which represents states in usa.
@@ -47,7 +47,7 @@ class CarsSold:
         date_by_voting_average_d = self.file_to_list(state_idx)
         return date_by_voting_average_d
 
-    def count_of_sold_cars_by_state(self):
+    def count_of_sold_cars_by_state(self) -> dict[str, int]:
         """
         Creates and returns a new dictionary whose keys are state names
             and values are count of cars sold in that state

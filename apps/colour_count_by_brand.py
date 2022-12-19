@@ -13,14 +13,16 @@ class Colour:
     Attributes:
         filename: string
     """
-    def __init__(self, filename):
+    def __init__(self, filename: str) -> None:
         """
         Instance variable initialization
         :param filename: string
         """
         self.filename = filename
 
-    def file_to_dictionary(self, key_column, value_column):
+    def file_to_dictionary(self,
+                           key_column: int,
+                           value_column: int) -> dict[str, list]:
         """
         Reads from text file named self.filename using csv.reader() method
         and creates a dictionary with the data in column key_column as keys and
@@ -46,7 +48,7 @@ class Colour:
                         car_dict[key] = [value]
         return car_dict
 
-    def brand_colour_d(self):
+    def brand_colour_d(self) -> dict[str, list]:
         """
         Creates and returns a dictionary whose keys are brand names and
         values are list of colours
@@ -59,7 +61,7 @@ class Colour:
         brand_by_colour = self.file_to_dictionary(brand_idx, colour_idx)
         return brand_by_colour
 
-    def colour_count_by_brand_d(self):
+    def colour_count_by_brand_d(self) -> dict[str, dict[str, int]]:
         """
         Creates and returns a new dictionary whose keys brand names
         and values are dictionaries where keys are car colours and corresponding counts as values

@@ -14,7 +14,7 @@ class BrandPrice:
         filename: string
     """
 
-    def __init__(self, filename):
+    def __init__(self, filename: str) -> None:
         """
         Instance variable initialization
         :param filename: string
@@ -47,7 +47,7 @@ class BrandPrice:
                         car_dict[key] = [value]
         return car_dict
 
-    def brand_by_price_d(self):
+    def brand_by_price_d(self) -> dict[str, list[int]]:
         """
         Creates and returns a dictionary whose keys are brands of cars
         and values are list of their selling prices.

@@ -105,8 +105,14 @@ def colour_count_by_brand_d(self) -> dict[str, dict[str, int]]:
   * Testing with five entries in the data file.
 * We have imported unittest library for testing the project results.
 
-### 3.x Name and describe the module and corresponding class for testing a particular method <-- Heading 3 ###
-#### 3.x.y Name and describe each testing method <-- Heading 4 ####
+### 3.1 TestAverageSellingPrice
+    """Test average_selling_price_by_brand() method."""
+#### 3.1.1 def test_multiple_entries(self):
+        """Test case 1 using USA_cars_datasets.csv.""" 
+#### 3.1.1 def test_empty(self):
+        """Test case 1 using car_dataset_empty.csv."""
+####  3.1.1 def test_empty(self):
+        """Test case 1 using car_dataset_empty.csv."""
   - These are subsections of 3.x above.
   - Testing method name should be suggestive of the type of test.
   - Each test describes specific inputs and expected results.

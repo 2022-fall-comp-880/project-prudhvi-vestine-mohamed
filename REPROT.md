@@ -27,6 +27,7 @@
   - *What is the count of a particular colour car sold by a particular brand?*
 --------------------------------------------------------------------------------------------------------
 
+
 ## 2. Approach 
 
 
@@ -91,8 +92,8 @@ def colour_count_by_brand_d(self) -> dict[str, dict[str, int]]:
     * Else increment the value of dictionary `colour_dict` by 1.
   * Return the `colour_dict` as the value to `brand_colour_count` with key as `brand`.
 * Return `brand_colour_count`
-
 ------------------------------------------------------------------------------------------------------------------------
+
 
 ## 3. Testing 
 
@@ -105,28 +106,88 @@ def colour_count_by_brand_d(self) -> dict[str, dict[str, int]]:
   * Testing with five entries in the data file.
 * We have imported unittest library for testing the project results.
 
-### 3.1 TestAverageSellingPrice
+### 3.1 class TestAverageSellingPrice
     """Test average_selling_price_by_brand() method."""
+* For every test method we have used assertion statements to validate the 
+results. 
 #### 3.1.1 def test_multiple_entries(self):
-        """Test case 1 using USA_cars_datasets.csv.""" 
-#### 3.1.1 def test_empty(self):
-        """Test case 1 using car_dataset_empty.csv."""
-####  3.1.1 def test_empty(self):
-        """Test case 1 using car_dataset_empty.csv."""
-  - These are subsections of 3.x above.
-  - Testing method name should be suggestive of the type of test.
-  - Each test describes specific inputs and expected results.
-  - Describe the **alternative ways of getting and testing the results**.
-}
+        """Test case 1 using USA_cars_datasets.csv."""
+* This method takes the whole dataset.
+* Output will be a dictionary of all entries in the dataset.
+#### 3.1.2 def test_empty(self):
+        """Test case 2 using car_dataset_empty.csv."""
+* This method takes the empty dataset.
+* Output will be an empty dictionary.
+#### 3.1.3 def test_five_entries(self):
+        """Test case 3 using car_dataset_5.csv."""
+* This method takes the file with five entries.
+* Output will be a dictionary of five entries.
+#### 3.1.4 def test_one_entries(self):
+        """Test case 4 using car_dataset_1.csv."""
+* This method takes the file with single entry.
+* Output will be a dictionary of single entry.
+-------------------------------------------------------------------------------------
+
+
+### 3.2 class TestSoldCarCountByState
+    """Test count_of_sold_cars_by_state() method."""
+* For every test method we have used assertion statements to validate the 
+results. 
+#### 3.2.1 def test_multiple_entries(self):
+        """Test case 1 using USA_cars_datasets.csv."""
+* This method takes the whole dataset.
+* Output will be a dictionary of all entries in the dataset.
+#### 3.2.2 def test_empty(self):
+        """Test case 2 using car_dataset_empty.csv."""
+* This method takes the empty dataset.
+* Output will be an empty dictionary.
+#### 3.2.3 def test_five_entries(self):
+        """Test case 3 using car_dataset_5.csv."""
+* This method takes the file with five entries.
+* Output will be a dictionary of five entries.
+#### 3.2.4 def test_one_entries(self):
+        """Test case 4 using car_dataset_1.csv."""
+* This method takes the file with single entry.
+* Output will be a dictionary of single entry.
+-------------------------------------------------------------------------------
+
+
+### 3.3 class TestColourCountByBrand
+    """Test colour_count_by_brand_d() method."""
+* For every test method we have used assertion statements to validate the 
+results. 
+#### 3.3.1 def test_multiple_entries(self):
+        """Test case 1 using USA_cars_datasets.csv."""
+* This method takes the whole dataset.
+* Output will be a dictionary of all entries in the dataset.
+#### 3.3.2 def test_empty(self):
+        """Test case 2 using car_dataset_empty.csv."""
+* This method takes the empty dataset.
+* Output will be an empty dictionary.
+#### 3.3.3 def test_five_entries(self):
+        """Test case 3 using car_dataset_5.csv."""
+* This method takes the file with five entries.
+* Output will be a dictionary of five entries.
+#### 3.3.4 def test_one_entries(self):
+        """Test case 4 using car_dataset_1.csv."""
+* This method takes the file with single entry.
+* Output will be a dictionary of single entry.
+---------------------------------------------------------------------------------------------------------------
 
 
 ## 4. Results 
 
-{
-<--- Heading 2 ##
+### 4.1 Average Selling price by Brand.
+* average_selling_price_by_brand(self) -> dict[str, float]:  
+* Output: dictionary (key: str, Brand name)(value: Float, Average selling price of corresponding brand car).
 
-Describe the program's output.
-}
+### 4.2 Count of cars sold per state.
+* count_of_sold_cars_by_state(self) -> dict[str, int]:
+* Output: dictionary(key: str, state)(value: int, Count of cars sold).
+
+### 4.3 Colour count by Brand.
+* colour_count_by_brand_d(self) -> dict[str, dict[str, int]]:
+* Output: dictionary (key: str, brand)(value: dictionary, keys as colours and values as count of particular colour cars).
 
 ## 5. Evaluation 
 

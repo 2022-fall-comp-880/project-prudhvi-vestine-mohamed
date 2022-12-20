@@ -4,7 +4,7 @@ import os
 from apps.colour_count_by_brand import Colour
 
 
-class TestAverageSellingPrice(unittest.TestCase):
+class TestColourCountByBrand(unittest.TestCase):
     """Test colour_count_by_brand_d() method."""
 
     def setUp(self):

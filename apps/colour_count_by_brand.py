@@ -32,7 +32,7 @@ class Colour:
         :param value_column:non-negative integer, position of column in the
             text file, with the first column at position 0
         :return: dictionary
-            key: string, representing data points in colmn key_file
+            key: string, representing data points in column key_file
             value: list of strings of corresponding values in column value_file
         """
         car_dict = {}

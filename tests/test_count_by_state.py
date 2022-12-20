@@ -34,7 +34,8 @@ class TestSoldCarCountByState(unittest.TestCase):
         actual_res2 = self.car_stats_five.count_of_sold_cars_by_state()
         print(self.car_stats_five.count_by_state_l)
         print(actual_res2)
-        expected_result = {'new jersey': 1, 'tennessee': 1, 'georgia': 1, 'virginia': 1, 'florida': 1}
+        expected_result = {'new jersey': 1, 'tennessee': 1,
+                           'georgia': 1, 'virginia': 1, 'florida': 1}
         self.assertDictEqual(actual_res2, expected_result)
 
     def test_one_entries(self):

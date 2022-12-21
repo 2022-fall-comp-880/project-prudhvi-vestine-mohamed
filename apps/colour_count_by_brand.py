@@ -24,7 +24,7 @@ class Colour:
                            key_column: int,
                            value_column: int) -> dict[str, list]:
         """
-        Reads from text file named self.filename using csv.reader() method
+        Reads from text file named self. filename using csv.reader() method
         and creates a dictionary with the data in column key_column as keys and
         data in column value_column as values
         :param key_column:non-negative integer, position of column in the
@@ -64,10 +64,12 @@ class Colour:
     def colour_count_by_brand_d(self) -> dict[str, dict[str, int]]:
         """
         Creates and returns a new dictionary whose keys brand names
-        and values are dictionaries where keys are car colours and corresponding counts as values
+        and values are dictionaries where keys are car colours and
+        corresponding counts as values
         :returns: dictionary
            key: str, brand
-           value: dictionary, keys as colours and values as count of particular colour cars.
+           value: dictionary, keys as colours and values as count of
+           particular colour cars.
         """
         brand_colour_dict = self.brand_colour_d()
         brand_colour_count = {}
@@ -80,5 +82,3 @@ class Colour:
                     colour_dict[a_colour] = 1
             brand_colour_count[brand] = colour_dict
         return brand_colour_count
-
-

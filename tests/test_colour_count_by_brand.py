@@ -1,4 +1,4 @@
-"""Testing colour_count_by_brand methods"""
+"""Test colour_count_by_brand methods."""
 import unittest
 import os
 from apps.colour_count_by_brand import Colour
@@ -46,4 +46,3 @@ class TestColourCountByBrand(unittest.TestCase):
         print(actual_res3)
         expected_result = {'toyota': {'black': 1}}
         self.assertDictEqual(actual_res3, expected_result)
-

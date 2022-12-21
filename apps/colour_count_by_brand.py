@@ -1,5 +1,6 @@
 """
-colour_count_by_brand.py
+colour_count_by_brand.py.
+
 Developer: Prudhvi Krishna
 Last updated: 12/7/2022
 """
@@ -9,7 +10,8 @@ import csv
 
 class Colour:
     """
-    Data processing functionality
+    Data processing functionality.
+
     Attributes:
         filename: string
     """
@@ -24,7 +26,8 @@ class Colour:
                            key_column: int,
                            value_column: int) -> dict[str, list]:
         """
-        Reads from text file named self. filename using csv.reader() method
+        Read from text file named self. filename using csv.reader() method.
+
         and creates a dictionary with the data in column key_column as keys and
         data in column value_column as values
         :param key_column:non-negative integer, position of column in the
@@ -50,7 +53,8 @@ class Colour:
 
     def brand_colour_d(self) -> dict[str, list]:
         """
-        Creates and returns a dictionary whose keys are brand names and
+        Create and returns a dictionary whose keys are brand names and.
+
         values are list of colours
         :return: dictionary
             key: str, representing brand name
@@ -63,7 +67,8 @@ class Colour:
 
     def colour_count_by_brand_d(self) -> dict[str, dict[str, int]]:
         """
-        Creates and returns a new dictionary whose keys brand names
+        Creates and returns a new dictionary whose keys brand names.
+
         and values are dictionaries where keys are car colours and
         corresponding counts as values
         :returns: dictionary

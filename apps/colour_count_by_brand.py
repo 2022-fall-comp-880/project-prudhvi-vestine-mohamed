@@ -15,9 +15,11 @@ class Colour:
     Attributes:
         filename: string
     """
+
     def __init__(self, filename: str) -> None:
         """
-        Instance variable initialization
+        Instance variable initialization.
+
         :param filename: string
         """
         self.filename = filename

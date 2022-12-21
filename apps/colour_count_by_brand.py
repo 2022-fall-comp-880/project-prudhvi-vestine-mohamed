@@ -15,9 +15,11 @@ class Colour:
     Attributes:
         filename: string
     """
+
     def __init__(self, filename: str) -> None:
         """
-        Instance variable initialization
+        Instance variable initialization.
+
         :param filename: string
         """
         self.filename = filename
@@ -67,7 +69,7 @@ class Colour:
 
     def colour_count_by_brand_d(self) -> dict[str, dict[str, int]]:
         """
-        Creates and returns a new dictionary whose keys brand names.
+        Create and returns a new dictionary whose keys brand names.
 
         and values are dictionaries where keys are car colours and
         corresponding counts as values

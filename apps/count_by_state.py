@@ -62,7 +62,6 @@ class CarsSold:
            key: str, state
            value: int, Count of cars sold.
         """
-
         state_dict = {}
         state_list = self.count_by_state_l
         for a_state in state_list:

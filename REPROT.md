@@ -19,7 +19,7 @@
   - Mileage -	miles traveled by vehicle
   - Vin - The vehicle identification number is a collection of 17 characters (digits and capital letters)
   - Title Status - This feature included binary classification, which are clean title vehicles and salvage insurance
-  - Lot - A lot number is an identification number assigned to a particular quantity or lot of material from a single manufacturer.For cars, a lot number is combined with a serial number to form the Vehicle Identification Number.
+  - Lot - A lot number is an identification number assigned to a particular quantity or a lot of material from a single manufacturer.For cars, a lot number is combined with a serial number to form the Vehicle Identification Number.
   - Condition -	Time
 * We have worked on the below investigative questions.
   - *What is the average selling price of a particular car model?*
@@ -187,16 +187,23 @@ results.
 
 ### 4.3 Colour count by Brand.
 * colour_count_by_brand_d(self) -> dict[str, dict[str, int]]:
-* Output: dictionary (key: str, brand)(value: dictionary, keys as colours and values as count of particular colour cars).
+* Output: dictionary (key: str, brand)(value: dictionary, keys as colours and 
+values as count of particular colour cars).
 
 ## 5. Evaluation 
 
-{
-<-- Heading 2 ##
 
-Evaluation has two parts.
 
-### 5.1 What Works and Scope Assumptions <-- Heading3 ###
+### 5.1 What Works and Scope Assumptions
+* Every transformation and Accumulation pattern, 
+We have performed in our project worked. We have found average selling price
+of each brand, Count of cars sold per state,and Count of cars of each colour
+by brand  there the possibility for larger scope by using all fields the data set.
+* There is scope for filtering the cars with `no-colour`. We have used only few
+fields in the dataset. By using the remaining attributes we can perform many 
+transformations on this dataset.
 
-### 5.2 Immediate Further Development <-- Heading3 ###
-}
+### 5.2 Immediate Further Development 
+* Our immediate development would be creating a lookup for a particular brand 
+and retrieving the average selling price and count of cars sold by that 
+particular brand with all the colour.
